@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 public class LoginSignupActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     @Override
@@ -62,5 +63,11 @@ public class LoginSignupActivity extends AppCompatActivity implements BottomNavi
         //handle back button action
         onBackPressed();
         return true;
+    }
+     public void forgotpassword(View v) {
+        Fragment fragment = new ForgotPasswordFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container,fragment);
+        transaction.commit();
     }
 }

@@ -115,6 +115,8 @@
     <string name="skip_login">Skip Login</string>
     <string name="saar_login">SAAR  Login</string>
     <string name="saar_signup">SAAR  Sign Up</string>
+    <string name="forgot_password">Forgot Password ?</string>
+
 
     <!--Contact Page-->
     <string name="office_admin">Office of A Dean Resource \n\nAdministrative Building, IIT Patna</string>
